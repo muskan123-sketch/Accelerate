@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://kit.fontawesome.com/fe3d68d4dc.js" crossorigin="anonymous"></script>
+    <style media="screen">
+    body{
+      background-image:url('back1.jpg');
+    }
+    nav a{
+       text-decoration: none;
+       outline: none;
+   color: white;
+   display: inline-block;
+   margin:5px 20px;
+   padding: 0px;
+   text-align: center;
+
+   }
+   nav{
+       padding: 0px;
+       text-align: center;
+       background-color: black;
+       box-shadow: 3px 2px 2px white;
+
+   }
+
+   nav a:hover{
+       background: linear-gradient(rgba(255, 255, 255, 0.171),rgba(172, 166, 166, 0.123));
+
+       border-radius: 10px;
+       border-bottom: 2px solid rgba(255, 255, 255, 0.555);
+
+       box-shadow: 1px 1px 3px white;
+       margin: 0px 5px;
+   }
+   nav a.active{
+       background-color: rgba(128, 128, 128, 0.185);
+       border-bottom:  1px solid white;
+   border-radius: 1px ;
+   }
+   .clearfix{
+     clear:both;
+   }
+
+   .dropdown{
+       display: inline-block;
+
+   }
+   .dropdown_list{
+       position:absolute;
+       padding: 20px;
+       width: 150px;
+       margin-top: 0px 0px;
+       display: none;
+       z-index:999;
+
+
+   }
+   .dropdown_list a{
+       text-align: center;
+       width: 130px;
+       display: block;
+       padding: 10px;
+       margin: 0px 0px;
+       color: white;
+       background-color:black;
+
+   }
+
+   .dropdown:hover .dropdown_list{
+       display: block;
+       background-color:black;
+
+   }
+
+
+
+
+
+
+    #img{
+
+      padding-top:10px;
+      padding-bottom:10px;
+      padding-left:10px;
+      padding:right:10px;
+    }
+    #input{
+      height:40px;
+      color:black;
+      font-size:20px;
+      text-align:center;
+      background:lightgray;
+      border-bottom: 2px solid darkgray;
+      border-radius: 4px;
+      font-weight:bold;
+      font-family:Acme;
+      font-family: 'Lobster', cursive;
+    }
+    #semes{
+      height:44px;
+      width:175px;
+      font-size:17px;
+      padding-top:10px;
+      padding-bottom:10px;
+      background:lightgray;
+      border-bottom: 2px solid darkgray;
+      border-radius: 4px;
+      font-weight:bold;
+      font-family: 'Lobster', cursive;
+    }
+    #head{
+      text-align:center;
+      font-size:30px;
+      padding-top:10px;
+      padding-bottom:10px;
+      color:white;
+
+
+
+    }
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+        <a target="_blank" href="onlinep.html" class="active"> Home</a>
+        <a href="#recommend" class="active">  About Us</a>
+
+
+              <!-- dropdown genre  -->
+              <div class="dropdown">
+                <a href="#Features" class="active">Features</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-handshake"></i>Online meeting and webinars</a>
+                <a href="#"><i class="fas fa-tablet-alt"></i> Screen sharing</a>
+                <a href="#"><i class="fas fa-file-pdf"></i> File sharing</a>
+                <a href="#"><i class="fas fa-globe"></i> Assistance from coursera,udemy</a>
+                <a href="#"><i class="fas fa-play-circle"></i>Access of recordings</a>
+                <a href="#"><i class="fas fa-database"></i> Managing student database</a>
+                <a href="#"><i class="far fa-comments"></i> Messaging</a>
+                </div>
+
+              </div>
+              <div class="dropdown">
+                <a href="#Resources" class="active">Resources</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-book"></i> Quick Start Guide</a>
+                <a href="#"><i class="fas fa-file-video"></i> Training Videos</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+
+                </div>
+
+              </div>
+
+
+        <a target="_blank" href="form3.html" class="active">Login</a>
+        <a target="_blank" href="forex2.html" class="active">Signup</a>
+
+
+        <input type="text" name="" id="" placeholder="search here">
+        <input type="button" name="" id="" value="search">
+    </nav>
+    <h1 style="text-align:center;font-size:60px;color:white;">RECORDINGS</h1>
+    <table style="text-align:center;margin-right:Auto;margin-left:auto;">
+      <tr>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>CS</u></b></h2>
+            <iframe id="img" width="400px" height="250px" src="https://www.youtube.com/embed/AT14lCXuMKI?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <select id="semes" name="semesters">
+              <option value="">select sem</option>
+              <option value="s1">sem 1</option>
+              <option value="s2">sem 2</option>
+              <option value="s3">sem 3</option>
+              <option value="s4">sem 4</option>
+              <option value="s5">sem 5</option>
+              <option value="s6">sem 6</option>
+              <option value="s7">sem 7</option>
+              <option value="s8">sem 8</option>
+
+            </select>
+            <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>IT</u></b></h2>
+            <iframe id="img" width="400px" height="250" src="https://www.youtube.com/embed/kBdlM6hNDAE?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <select id="semes" name="semesters">
+              <option value="">select sem</option>
+              <option value="s1">sem 1</option>
+              <option value="s2">sem 2</option>
+              <option value="s3">sem 3</option>
+              <option value="s4">sem 4</option>
+              <option value="s5">sem 5</option>
+              <option value="s6">sem 6</option>
+              <option value="s7">sem 7</option>
+              <option value="s8">sem 8</option>
+
+            </select>
+            <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>ELECTRONICS</u></b></h2>
+            <iframe id="img" width="400px" height="250px" src="https://www.youtube.com/embed/2xXErGeeb_Q?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <select id="semes" name="semesters">
+              <option value="">select sem</option>
+              <option value="s1">sem 1</option>
+              <option value="s2">sem 2</option>
+              <option value="s3">sem 3</option>
+              <option value="s4">sem 4</option>
+              <option value="s5">sem 5</option>
+              <option value="s6">sem 6</option>
+              <option value="s7">sem 7</option>
+              <option value="s8">sem 8</option>
+
+            </select>
+            <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+          </div>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>ELECTRICAL</u></b></h2>
+            <iframe id="img" width="400px" height="250px" src="https://www.youtube.com/embed/81n7HrLn3Ng?list=PL-XGvE4CWWbH-NoBnufnQBZVwy67bLEwF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <select id="semes" name="semesters">
+              <option value="">select sem</option>
+              <option value="s1">sem 1</option>
+              <option value="s2">sem 2</option>
+              <option value="s3">sem 3</option>
+              <option value="s4">sem 4</option>
+              <option value="s5">sem 5</option>
+              <option value="s6">sem 6</option>
+              <option value="s7">sem 7</option>
+              <option value="s8">sem 8</option>
+
+            </select>
+            <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>CIVIL</u></b></h2>
+              <iframe id="img" width="400" height="250" src="https://www.youtube.com/embed/pdbQvIbGd_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <select id="semes" name="semesters">
+                <option value="">select sem</option>
+                <option value="s1">sem 1</option>
+                <option value="s2">sem 2</option>
+                <option value="s3">sem 3</option>
+                <option value="s4">sem 4</option>
+                <option value="s5">sem 5</option>
+                <option value="s6">sem 6</option>
+                <option value="s7">sem 7</option>
+                <option value="s8">sem 8</option>
+
+              </select>
+              <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>BUSINESS STUDIES</u></b></h2>
+            <iframe id="img" width="400px" height="250px" src="https://www.youtube.com/embed/GSAy_jEOV6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <select id="semes" name="semesters">
+              <option value="">select sem</option>
+              <option value="s1">sem 1</option>
+              <option value="s2">sem 2</option>
+              <option value="s3">sem 3</option>
+              <option value="s4">sem 4</option>
+              <option value="s5">sem 5</option>
+              <option value="s6">sem 6</option>
+              <option value="s7">sem 7</option>
+              <option value="s8">sem 8</option>
+
+            </select>
+            <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+          </div>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>CHEMICAL</u></b></h2>
+            <iframe id="img" width="400px" height="200px" src="https://www.youtube.com/embed/Kf7oOs5J-20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <select id="semes" name="semesters">
+              <option value="">select sem</option>
+              <option value="s1">sem 1</option>
+              <option value="s2">sem 2</option>
+              <option value="s3">sem 3</option>
+              <option value="s4">sem 4</option>
+              <option value="s5">sem 5</option>
+              <option value="s6">sem 6</option>
+              <option value="s7">sem 7</option>
+              <option value="s8">sem 8</option>
+
+            </select>
+            <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>PRODUCTION</u></b></h2>
+            <iframe id="img" width="400px" height="200px" src="https://www.youtube.com/embed/HGC3_S_LHnk?list=PL9H2IJVEgfm8w10EKq2YdtMlTDXedmrdB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <select id="semes" name="semesters">
+              <option value="">select sem</option>
+              <option value="s1">sem 1</option>
+              <option value="s2">sem 2</option>
+              <option value="s3">sem 3</option>
+              <option value="s4">sem 4</option>
+              <option value="s5">sem 5</option>
+              <option value="s6">sem 6</option>
+              <option value="s7">sem 7</option>
+              <option value="s8">sem 8</option>
+
+            </select>
+            <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>FINANCE</u></b></h2>
+            <iframe id="img" width="400px" height="200px" src="https://www.youtube.com/embed/LMiLiCK1NkM?list=PLwdnzlV3ogoV-4hbV6DP3BjdmjuaQPjcr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <select id="semes" name="semesters">
+              <option value="">select sem</option>
+              <option value="s1">sem 1</option>
+              <option value="s2">sem 2</option>
+              <option value="s3">sem 3</option>
+              <option value="s4">sem 4</option>
+              <option value="s5">sem 5</option>
+              <option value="s6">sem 6</option>
+              <option value="s7">sem 7</option>
+              <option value="s8">sem 8</option>
+
+            </select>
+            <input id="input"type="date" name="date" placeholder="select date" max="2020-11-01" ><br>
+          </div>
+        </td>
+
+      </tr>
+
+
+    </table>
+
+  </body>
+</html>

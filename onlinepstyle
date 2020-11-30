@@ -1,0 +1,306 @@
+html{
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0px;
+
+    }
+    /* header{
+       background: url(lap.jpg);
+       text-align: center;
+       width: 100%;
+       height: 250px;
+       background-size: cover;
+       background-attachment: fixed;
+       position: relative;
+       overflow: hidden;
+
+    } */
+
+
+    /* .overlay h1{
+        font-family:sans-serif ;
+        font-size: 70px;
+        color: white;
+        text-shadow: 2px 2px 1px #333;
+    }
+    .overlay p{
+      color:white;
+      font-size :25px;
+      color:white;
+      text-shadow: 1px 1px 1px #333
+    }
+ */
+
+    nav a{
+       text-decoration: none;
+       outline: none;
+   color: white;
+   display: inline-block;
+   margin:5px 20px;
+   padding: 0px;
+   text-align: center;
+
+   }
+   nav{
+       padding: 0px;
+       text-align: center;
+       background-color: black;
+       box-shadow: 3px 2px 2px white;
+
+   }
+
+   nav a:hover{
+       background: linear-gradient(rgba(255, 255, 255, 0.171),rgba(172, 166, 166, 0.123));
+
+       border-radius: 10px;
+       border-bottom: 2px solid rgba(255, 255, 255, 0.555);
+
+       box-shadow: 1px 1px 3px white;
+       margin: 0px 5px;
+   }
+   nav a.active{
+       background-color: rgba(128, 128, 128, 0.185);
+       border-bottom:  1px solid white;
+   border-radius: 1px ;
+   }
+   .clearfix{
+     clear:both;
+   }
+
+   .dropdown{
+       display: inline-block;
+
+   }
+   .dropdown_list{
+       position:absolute;
+       padding: 20px;
+       width: 150px;
+       margin-top: 0px 0px;
+       display: none;
+       z-index:999;
+
+
+   }
+   .dropdown_list a{
+       text-align: center;
+       width: 130px;
+       display: block;
+       padding: 10px;
+       margin: 0px 0px;
+       color: white;
+       background-color:black;
+
+   }
+
+   .dropdown:hover .dropdown_list{
+       display: block;
+       background-color:black;
+
+   }
+   .slider {
+
+         background-size: cover;
+         background-image: url("connect.JPG");
+
+          width: 100%;
+          box-shadow: 1px 1px 3px white;
+          border-bottom: 3px solid blue;
+          overflow: hidden;
+          font-size: 15px;
+          letter-spacing: 2px;
+          color: white;
+          height: 30px;
+          margin: auto;
+
+        }
+
+        .slide-text {
+            animation: slider 15s infinite ease-in-out;
+            margin-top: 5px;
+        }
+
+    @keyframes slider{
+        0%{
+            transform: translate(100%);
+        }
+        100%{
+            transform: translate(-100%);
+        }
+
+    }
+    aside{
+        background: linear-gradient(100deg,black,rgb(77, 74, 74));
+        text-align: center;
+        box-shadow: 2px 2px 10px black;
+       width: 250px;
+       height: 800px;
+       top: 0px;
+       float: left;
+       position: sticky;
+
+
+    }
+    aside a{
+       margin:auto ;
+       padding:15px 25px;
+       height:50px;
+
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        outline: none;
+        /* display is most important */
+        display:block ;
+
+    }
+
+
+.CHAT:hover{
+background-image: url("chat.png");
+background-position: center;
+box-shadow:0 0 5px  white;
+border-bottom: 2px solid white;
+border-radius: 2px;
+
+
+}
+.TimeTable:hover{
+    background-image: url("Time.jpg");
+background-position: center;
+box-shadow: 0 0 5px white;
+border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.Classes:hover{
+    background-image: url("class.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.File:hover{
+  background-image: url("fil.png") ;
+background-position: center;
+box-shadow: 0 0 5px white;
+background-size:cover;
+border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.Upcoming:hover{
+    background-image: url("even1.jpg");
+    background-position:center;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+    border-radius: 2px;
+}
+.Credits:hover{
+    background-image: url("credits.jpg");
+    background-position: center;
+    box-shadow: 0 0 5px white;
+background-size: cover;
+border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.Udemy:hover{
+    background-image: url("udemy.jpg");
+    background-position: center;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.Coursera:hover{
+    background-image: url("coursera.png");
+    background-position: center;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.quiz:hover{
+    background-image: url("quiz.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.Recordings:hover{
+    background-image: url("rec1.jpg");
+    background-position: center;
+    box-shadow: 0 0 5px white;
+    border-bottom: 2px solid white;
+border-radius: 2px;
+}
+.banner{
+  width:1080px;
+  height:1000px;
+  overflow:hidden;
+
+
+}
+.banner img{
+  width:100%;
+  height:1000px;
+}
+.content-holder{
+  background:lightpink;
+}
+.content{
+  width:100%;
+  height:400px;
+  padding:25px;
+  float:left;
+  text-align:center;
+  text-indent: 30px;
+  background: lightpink;
+
+
+}
+.content p{
+  font-size:20px;
+}
+.main-footer{
+  background-color: black;
+  color:white;
+  width:1990px;
+  height:auto;
+  padding:25px;
+}
+.footer-box{
+  width:237.5px;
+  heiht:auto;
+  float:left;
+
+}
+.footer-box ul{
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+.footer-box ul li{
+  display:block;
+  font-size:small;
+  margin-bottom:5px;
+  text-decoration:none;
+}
+address p{
+  font-size:small;
+}
+.footer-box address a{
+  color:teal;
+  font-size:small;
+}
+.copy{
+  padding:25px;
+  background-color:crimson;
+  color:white;
+  width:1990px;
+  margin:auto;
+  text-align:center;
+}
+.copy p{
+  margin:auto;
+  padding:25px;
+  text-align:center;
+}

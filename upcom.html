@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://kit.fontawesome.com/fe3d68d4dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="upcom.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style media="screen">
+  body{
+    background-color:lightblue;
+  }
+  nav a{
+     text-decoration: none;
+     outline: none;
+ color: white;
+ display: inline-block;
+ margin:5px 20px;
+ padding: 0px;
+ text-align: center;
+
+ }
+ nav{
+     padding: 0px;
+     text-align: center;
+     background-color: black;
+     box-shadow: 3px 2px 2px white;
+
+ }
+
+ nav a:hover{
+     background: linear-gradient(rgba(255, 255, 255, 0.171),rgba(172, 166, 166, 0.123));
+
+     border-radius: 10px;
+     border-bottom: 2px solid rgba(255, 255, 255, 0.555);
+
+     box-shadow: 1px 1px 3px white;
+     margin: 0px 5px;
+ }
+ nav a.active{
+     background-color: rgba(128, 128, 128, 0.185);
+     border-bottom:  1px solid white;
+ border-radius: 1px ;
+ }
+ .clearfix{
+   clear:both;
+ }
+
+ .dropdown{
+     display: inline-block;
+
+ }
+ .dropdown_list{
+     position:absolute;
+     padding: 20px;
+     width: 150px;
+     margin-top: 0px 0px;
+     display: none;
+     z-index:999;
+
+
+ }
+ .dropdown_list a{
+     text-align: center;
+     width: 130px;
+     display: block;
+     padding: 10px;
+     margin: 0px 0px;
+     color: white;
+     background-color:black;
+
+ }
+
+ .dropdown:hover .dropdown_list{
+     display: block;
+     background-color:black;
+
+ }
+
+
+
+
+</style>
+  </head>
+  <body>
+    <nav>
+        <a target="_blank" href="onlinep.html" class="active"> Home</a>
+        <a href="#recommend" class="active">  About Us</a>
+
+
+              <!-- dropdown genre  -->
+              <div class="dropdown">
+                <a href="#Features" class="active">Features</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-handshake"></i>Online meeting and webinars</a>
+                <a href="#"><i class="fas fa-tablet-alt"></i> Screen sharing</a>
+                <a href="#"><i class="fas fa-file-pdf"></i> File sharing</a>
+                <a href="#"><i class="fas fa-globe"></i> Assistance from coursera,udemy</a>
+                <a href="#"><i class="fas fa-play-circle"></i>Access of recordings</a>
+                <a href="#"><i class="fas fa-database"></i> Managing student database</a>
+                <a href="#"><i class="far fa-comments"></i> Messaging</a>
+                </div>
+
+              </div>
+              <div class="dropdown">
+                <a href="#Resources" class="active">Resources</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-book"></i> Quick Start Guide</a>
+                <a href="#"><i class="fas fa-file-video"></i> Training Videos</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+
+                </div>
+
+              </div>
+
+
+        <a target="_blank" href="form3.html" class="active">Login</a>
+        <a target="_blank" href="forex2.html" class="active">Signup</a>
+
+
+        <input type="text" name="" id="" placeholder="search here">
+        <input type="button" name="" id="" value="search">
+    </nav>
+    <div class="container">
+
+  <h3 style="font-weight:bold;text-align:center;">UPCOMING EVENTS</h3>
+
+  <hr>
+  <div class="row">
+    <div class="col-lg-push-4 col-md-4 col-md-push-4">
+      <div class="searchForm type2">
+        <form action="" class="searchForm"><!-- Add The Appropriate Action for Your Site's Search Form/Page -->
+          <label class="sr-only" for="searchNewsEvents">Search  Events</label>
+           <input id="searchNewsEvents" name="q" placeholder="What are you looking for?" type="search"> <input type="submit" value="Search">
+        </form>
+      </div>
+    </div>
+    <div class="clearfix visible-sm visible-xs">
+      &nbsp;
+    </div>
+    <div class="col-lg-push-4 col-md-4 col-md-push-4">
+      <div class="dropdownCategories">
+      <label class="sr-only" for="dropdownNewsEvents">Category dropdown for News and Events</label>
+      <select>
+        <option value="">
+          Select Category
+        </option>
+        <option value=""><!-- Each option value should correspond to the appropriate filter on your site's News or Events page -->
+          Design
+        </option>
+        <option value=""><!-- Each option value should correspond to the appropriate filter on your site's News or Events page -->
+          Programming
+        </option>
+        <option value=""><!-- Each option value should correspond to the appropriate filter on your site's News or Events page -->
+          Support
+        </option>
+        <option value=""><!-- Each option value should correspond to the appropriate filter on your site's News or Events page -->
+          Training
+        </option>
+      </select>
+      </div>
+    </div>
+    <div class="clearfix visible-sm visible-xs">
+      &nbsp;
+    </div>
+    <div class="col-lg-4 col-lg-pull-8 col-md-4 col-md-pull-8">
+      <ul class="nav nav-pills" role="tablist">
+        <li class="active">
+          <a data-toggle="tab" href="#tab1" role="tab">Events</a>
+        </li>
+      </ul>
+    </div>
+  </div><!-- / row -->
+  <hr>
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="tab1">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="media">
+            <a class="pull-left" href="#"><span class="dateEl"><em>30</em>Nov</span></a>
+            <div class="media-body">
+              <h4 class="media-heading">
+                <a href="#">Seminar on python programming and data science</a>
+               </h4>
+               <div class="meta-data">
+                 <span class="longDate">Nov 30, 2020</span> <span class="timeEl">12:00pm - 02:00pm</span>
+               </div>
+               <p>
+                 See the latest libraries and learn about visualisation
+               </p>
+             </div><!-- / media-body -->
+           </div><!-- / media -->
+           <div class="media">
+             <a class="pull-left" href="#"><span class="dateEl"><em>11</em>Dec</span></a>
+             <div class="media-body">
+               <h4 class="media-heading">
+                 <a href="#">Tech Conference</a>
+               </h4>
+               <div class="meta-data">
+                 <span class="longDate">Dec 11, 2020</span> <span class="timeEl">06:00pm - 07:30pm</span>
+               </div>
+               <p>
+                 Local tech entrepreneurs gather to share their knowledge.
+               </p>
+             </div><!-- / media-body -->
+           </div><!-- / media -->
+           <div class="media">
+             <a class="pull-left" href="#"><span class="dateEl"><em>15</em>Dec</span></a>
+             <div class="media-body">
+               <h4 class="media-heading">
+                 <a href="#">Seminar on big data</a>
+               </h4>
+               <div class="meta-data">
+                 <span class="longDate">Dec 15, 2020</span> <span class="timeEl">05:30pm - 07:30pm</span>
+               </div>
+               <p>
+                 To have an idea on several projects on big data
+               </p>
+             </div><!-- / media-body -->
+           </div><!-- / media -->
+         </div><!-- / .col-md-6 -->
+         <div class="col-md-6">
+           <div class="media">
+             <a class="pull-left" href="#"><span class="dateEl"><em>18</em>Dec</span></a>
+             <div class="media-body">
+               <h4 class="media-heading">
+                 <a href="#">Programming 101</a>
+               </h4>
+               <div class="meta-data">
+                 <span class="longDate">Dec 18, 2020</span> <span class="timeEl">06:00pm - 08:00pm</span>
+               </div>
+               <p>
+                 Take the basic CMS training class to see where things are and how to build custom modules.
+               </p>
+             </div><!-- / media-body -->
+           </div><!-- / media -->
+           <div class="media">
+             <a class="pull-left" href="#"><span class="dateEl"><em>21</em>Dec</span></a>
+             <div class="media-body">
+               <h4 class="media-heading">
+                 <a href="#">Session for those interested in graphic designing</a>
+               </h4>
+               <div class="meta-data">
+                 <span class="longDate">Dec 21, 2020</span> <span class="timeEl">10:00am - 12:00pm</span>
+               </div>
+               <p>
+                 Get tips and information regarding how to design logos,pages and websites for mobile devices.
+               </p>
+             </div><!-- / media-body -->
+           </div><!-- / media -->
+           <div class="media">
+             <a class="pull-left" href="#"><span class="dateEl"><em>21</em>Dec</span></a>
+             <div class="media-body">
+               <h4 class="media-heading">
+                 <a href="#">Modern Support</a>
+               </h4>
+               <div class="meta-data">
+                 <span class="longDate">Dec 22, 2020</span> <span class="timeEl">10:00am - 12:00pm</span>
+               </div>
+               <p>
+                 Learn from industry leaders about providing the best support possible.
+               </p>
+             </div><!-- / media-body -->
+           </div><!-- / media -->
+         </div><!-- / .col-md-6 -->
+       </div><!-- / row -->
+       <div class="text-center">
+         <br>
+         <a style="box-shadow: 1px 1px 3px white;
+         border-bottom: 4px solid darkgray;
+         border-radius: 8px;
+         font-weight:bold;background-color:purple;color:white;"class="btn btn-default" href="#">SEE ALL EVENTS</a>
+       </div>
+     </div>
+     <div class="tab-pane fade" id="tab2">
+       <div class="row">
+         <div class="col-md-6">
+           <div class="blogPost--small">
+             <div class="media">
+               <span class="pull-left"><a href="#"><span class="date"><span>29</span> <small>Nov</small></span></a></span>
+               <div class="media-body">
+                 <h4 class="media-heading">
+                   <a href="#">Building In WebCorpCo CMS 8</a>
+                 </h4>
+                 <p>
+                   Learn about all of the possibilities of web design in our latest CMS release.
+                 </p>
+               </div>
+             </div>
+           </div><!-- / blogPost -->
+           <div class="blogPost--small">
+             <div class="media">
+               <span class="pull-left"><a href="#"><span class="date"><span>22</span> <small>Nov</small></span></a></span>
+               <div class="media-body">
+                 <h4 class="media-heading">
+                   <a href="#">WebCorpCo Named To Inc. 5000</a>
+                 </h4>
+                 <p>
+                   Inc. magazine today ranked WebCorpCo as the 1,870th fastest growing company on the 34th annual Inc. 5000.
+                 </p>
+               </div>
+             </div>
+           </div><!-- / blogPost -->
+         </div><!-- / .col-md-6 -->
+         <div class="col-md-6">
+           <div class="blogPost--small">
+             <div class="media">
+               <span class="pull-left"><a href="#"><span class="date"><span>12</span> <small>Nov</small></span></a></span>
+               <div class="media-body">
+                 <h4 class="media-heading">
+                   <a href="#">7 Critical Factors When Choosing A CMS</a>
+                 </h4>
+                 <p>
+                   Finding a solution that can be tailored to support the needs of your business is more important than ever.
+                 </p>
+               </div>
+             </div>
+           </div><!-- / blogPost -->
+           <div class="blogPost--small">
+             <div class="media">
+               <span class="pull-left"><a href="#"><span class="date"><span>30</span> <small>December</small></span></a></span>
+               <div class="media-body">
+                 <h4 class="media-heading">
+                   <a href="#">What Is A Content Management System</a>
+                 </h4>
+                 <p>
+                   So many acronyms that most of us know a brief amount about, if at all, let alone the meaning of those three little letters we hear so often.
+                 </p>
+               </div>
+             </div>
+           </div><!-- / blogPost -->
+         </div><!-- / row -->
+         <div class="text-center">
+           <br>
+           <a class="btn btn-default" href="#">SEE ALL NEWS</a>
+         </div>
+       </div>
+     </div>
+   </div>
+
+  </body>
+</html>

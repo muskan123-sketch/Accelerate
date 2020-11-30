@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="credit.css">
+    <script src="https://kit.fontawesome.com/fe3d68d4dc.js" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <style media="screen">
+
+    nav a{
+       text-decoration: none;
+       outline: none;
+   color: white;
+   display: inline-block;
+   margin:5px 20px;
+   padding: 0px;
+   text-align: center;
+
+   }
+   nav{
+       padding: 0px;
+       text-align: center;
+       background-color: black;
+       box-shadow: 3px 2px 2px white;
+
+   }
+
+   nav a:hover{
+       background: linear-gradient(rgba(255, 255, 255, 0.171),rgba(172, 166, 166, 0.123));
+
+       border-radius: 10px;
+       border-bottom: 2px solid rgba(255, 255, 255, 0.555);
+
+       box-shadow: 1px 1px 3px white;
+       margin: 0px 5px;
+   }
+   nav a.active{
+       background-color: rgba(128, 128, 128, 0.185);
+       border-bottom:  1px solid white;
+   border-radius: 1px ;
+   }
+   .clearfix{
+     clear:both;
+   }
+
+   .dropdown{
+       display: inline-block;
+
+   }
+   .dropdown_list{
+       position:absolute;
+       padding: 20px;
+       width: 150px;
+       margin-top: 0px 0px;
+       display: none;
+       z-index:999;
+
+
+   }
+   .dropdown_list a{
+       text-align: center;
+       width: 130px;
+       display: block;
+       padding: 10px;
+       margin: 0px 0px;
+       color: white;
+       background-color:black;
+
+   }
+
+   .dropdown:hover .dropdown_list{
+       display: block;
+       background-color:black;
+
+   }
+   #semes{
+     height:50px;
+     width:187px;
+     font-size:17px;
+     padding-top:15px;
+     padding-bottom:15px;
+     background:lightgray;
+     border-bottom: 2px solid darkgray;
+     border-radius: 4px;
+     font-weight:bold;
+     <!-- margin-left:250px; -->
+     <!-- margin-right:250px; -->
+     <!-- text-align:center; -->
+   }
+
+
+
+  </style>
+  <body>
+    <nav>
+        <a target="_blank" href="onlinep.html" class="active"> Home</a>
+        <a href="#recommend" class="active">  About Us</a>
+
+
+              <!-- dropdown genre  -->
+              <div class="dropdown">
+                <a href="#Features" class="active">Features</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-handshake"></i>Online meeting and webinars</a>
+                <a href="#"><i class="fas fa-tablet-alt"></i> Screen sharing</a>
+                <a href="#"><i class="fas fa-file-pdf"></i> File sharing</a>
+                <a href="#"><i class="fas fa-globe"></i> Assistance from coursera,udemy</a>
+                <a href="#"><i class="fas fa-play-circle"></i>Access of recordings</a>
+                <a href="#"><i class="fas fa-database"></i> Managing student database</a>
+                <a href="#"><i class="far fa-comments"></i> Messaging</a>
+                </div>
+
+              </div>
+              <div class="dropdown">
+                <a href="#Resources" class="active">Resources</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-book"></i> Quick Start Guide</a>
+                <a href="#"><i class="fas fa-file-video"></i> Training Videos</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+
+                </div>
+
+              </div>
+
+
+        <a target="_blank" href="form3.html" class="active">Login</a>
+        <a target="_blank" href="forex2.html" class="active">Signup</a>
+
+
+        <input type="text" name="" id="" placeholder="search here">
+        <input type="button" name="" id="" value="search">
+    </nav>
+    <select id="semes" name="semesters">
+      <option value="">CS</option>
+      <option value="s1">sem 1</option>
+      <option value="s2">sem 2</option>
+      <option value="s3">sem 3</option>
+      <option value="s4">sem 4</option>
+      <option value="s5">sem 5</option>
+      <option value="s6">sem 6</option>
+      <option value="s7">sem 7</option>
+      <option value="s8">sem 8</option>
+
+    </select>
+    <select id="semes" name="semesters">
+      <option value="">IT</option>
+      <option value="s1">sem 1</option>
+      <option value="s2">sem 2</option>
+      <option value="s3">sem 3</option>
+      <option value="s4">sem 4</option>
+      <option value="s5">sem 5</option>
+      <option value="s6">sem 6</option>
+      <option value="s7">sem 7</option>
+      <option value="s8">sem 8</option>
+
+    </select>
+    <select id="semes" name="semesters">
+      <option value="">E&TC</option>
+      <option value="s1">sem 1</option>
+      <option value="s2">sem 2</option>
+      <option value="s3">sem 3</option>
+      <option value="s4">sem 4</option>
+      <option value="s5">sem 5</option>
+      <option value="s6">sem 6</option>
+      <option value="s7">sem 7</option>
+      <option value="s8">sem 8</option>
+
+    </select>
+    <select id="semes" name="semesters">
+      <option value="">ELECTRICAL</option>
+      <option value="s1">sem 1</option>
+      <option value="s2">sem 2</option>
+      <option value="s3">sem 3</option>
+      <option value="s4">sem 4</option>
+      <option value="s5">sem 5</option>
+      <option value="s6">sem 6</option>
+      <option value="s7">sem 7</option>
+      <option value="s8">sem 8</option>
+
+    </select>
+    <select id="semes" name="semesters">
+      <option value="">Mechanical</option>
+      <option value="s1">sem 1</option>
+      <option value="s2">sem 2</option>
+      <option value="s3">sem 3</option>
+      <option value="s4">sem 4</option>
+      <option value="s5">sem 5</option>
+      <option value="s6">sem 6</option>
+      <option value="s7">sem 7</option>
+      <option value="s8">sem 8</option>
+
+    </select>
+    <select id="semes" name="semesters">
+      <option value="">Chemical</option>
+      <option value="s1">sem 1</option>
+      <option value="s2">sem 2</option>
+      <option value="s3">sem 3</option>
+      <option value="s4">sem 4</option>
+      <option value="s5">sem 5</option>
+      <option value="s6">sem 6</option>
+      <option value="s7">sem 7</option>
+      <option value="s8">sem 8</option>
+
+    </select>
+    <select id="semes" name="semesters">
+      <option value="">CSBS</option>
+      <option value="s1">sem 1</option>
+      <option value="s2">sem 2</option>
+      <option value="s3">sem 3</option>
+      <option value="s4">sem 4</option>
+      <option value="s5">sem 5</option>
+      <option value="s6">sem 6</option>
+      <option value="s7">sem 7</option>
+      <option value="s8">sem 8</option>
+
+    </select>
+
+    <table class="styled-table">
+    <thead>
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Credits</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Shivam jaiswal</td>
+            <td>Python for Everybody</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>2</td>
+            <td>Rehan pandit</td>
+            <td>Data strctures bootcamp </td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>3</td>
+            <td>Shravan Anand</td>
+            <td>C++ programming bootcamp </td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>4</td>
+            <td>Aditi Malviya</td>
+            <td>Python bootcamp </td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>5</td>
+            <td>Akshat Agrawal</td>
+            <td>A complete guide on machine learning </td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>6</td>
+            <td>Kavita Dutta</td>
+            <td>PostgreSQL</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="active-row">
+            <td>....</td>
+            <td>....</td>
+            <td>....</td>
+            <td><i style="color:yellow"class="fa fa-star" aria-hidden="true"></i><i style="color:yellow" class="fa fa-star" aria-hidden="true"></i></td>
+        </tr>
+
+
+    </tbody>
+</table>
+  </body>
+</html>

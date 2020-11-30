@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://kit.fontawesome.com/fe3d68d4dc.js" crossorigin="anonymous"></script>
+    <style media="screen">
+
+    body{
+      background-image:url('back1.jpg');
+    }
+    nav a{
+       text-decoration: none;
+       outline: none;
+   color: white;
+   display: inline-block;
+   margin:5px 20px;
+   padding: 0px;
+   text-align: center;
+
+
+   }
+   nav{
+       padding: 0px;
+       text-align: center;
+       background-color: black;
+       box-shadow: 3px 2px 2px white;
+       height:50px;
+
+   }
+
+   nav a:hover{
+       background: linear-gradient(rgba(255, 255, 255, 0.171),rgba(172, 166, 166, 0.123));
+
+       border-radius: 10px;
+       border-bottom: 2px solid rgba(255, 255, 255, 0.555);
+
+       box-shadow: 1px 1px 3px white;
+       margin: 0px 5px;
+   }
+   nav a.active{
+       background-color: rgba(128, 128, 128, 0.185);
+       border-bottom:  1px solid white;
+   border-radius: 1px ;
+   }
+   .clearfix{
+     clear:both;
+   }
+
+   .dropdown{
+       display: inline-block;
+
+   }
+   .dropdown_list{
+       position:absolute;
+       padding: 20px;
+       width: 150px;
+       margin-top: 0px 0px;
+       display: none;
+       z-index:999;
+
+
+   }
+   .dropdown_list a{
+       text-align: center;
+       width: 130px;
+       display: block;
+       padding: 10px;
+       margin: 0px 0px;
+       color: white;
+       background-color:black;
+
+   }
+
+   .dropdown:hover .dropdown_list{
+       display: block;
+       background-color:black;
+
+   }
+    #img{
+      width:500px;
+      height:300px;
+      padding-top:10px;
+      padding-bottom:10px;
+      padding-left:10px;
+      padding:right:10px;
+    }
+    #input{
+      height:40px;
+      color:black;
+      font-size:30px;
+      text-align:center;
+      color:white;
+      box-shadow: 1px 1px 3px white;
+      border-bottom: 4px solid darkgray;
+      border-radius: 8px;
+      font-weight:bold;
+      font-family: 'Lobster', cursive;
+    }
+    #head{
+      text-align:center;
+      font-size:30px;
+      padding-top:10px;
+      padding-bottom:10px
+
+      text-decoration-style: double;
+      color:white;
+
+
+    }
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+        <a target="_blank" href="onlinep.html" class="active"> Home</a>
+        <a href="#recommend" class="active">  About Us</a>
+
+
+              <!-- dropdown genre  -->
+              <div class="dropdown">
+                <a href="#Features" class="active">Features</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-handshake"></i>Online meeting and webinars</a>
+                <a href="#"><i class="fas fa-tablet-alt"></i> Screen sharing</a>
+                <a href="#"><i class="fas fa-file-pdf"></i> File sharing</a>
+                <a href="#"><i class="fas fa-globe"></i> Assistance from coursera,udemy</a>
+                <a href="#"><i class="fas fa-play-circle"></i>Access of recordings</a>
+                <a href="#"><i class="fas fa-database"></i> Managing student database</a>
+                <a href="#"><i class="far fa-comments"></i> Messaging</a>
+                </div>
+
+              </div>
+              <div class="dropdown">
+                <a href="#Resources" class="active">Resources</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-book"></i> Quick Start Guide</a>
+                <a href="#"><i class="fas fa-file-video"></i> Training Videos</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+
+                </div>
+
+              </div>
+
+
+        <a target="_blank" href="form3.html" class="active">Login</a>
+        <a target="_blank" href="forex2.html" class="active">Signup</a>
+
+
+        <input type="text" name="" id="" placeholder="search here">
+        <input type="button" name="" id="" value="search">
+    </nav>
+    <h1 style="text-align:center;font-size:40px;color:white;">BRANCHES</h1>
+    <table style="text-align:center;margin-right:Auto;margin-left:auto;">
+      <tr>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>CS</u></b></h2>
+            <img id="img" src="cs.JPG" alt="">
+            <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>IT</u></b></h2>
+            <img id="img" src="it.JPG" alt="">
+            <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>ELECTRONICS</u></b></h2>
+            <img id="img" src="electronics.JPG" alt="">
+            <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>ELECTRICAL</u></b></h2>
+            <img id="img" src="electrical.JPG" alt="">
+              <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>CIVIL</u></b></h2>
+            <img id="img" src="civil.JPG" alt="">
+              <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>BUSINESS STUDIES</u></b></h2>
+            <img id="img" src="business.JPG" alt="">
+              <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>CHEMICAL</u></b></h2>
+            <img id="img" src="chemical.JPG" alt="">
+              <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>PRODUCTION</u></b></h2>
+            <img id="img" src="production.JPG" alt="">
+            <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+        <td>
+          <div class="">
+            <h2 id="head"><b><u>FINANCE</u></b></h2>
+            <img id="img" src="finance.JPG" alt="">
+            <input id="input"type="text" name="" placeholder="JOIN CLASS"><br>
+          </div>
+        </td>
+
+      </tr>
+
+
+    </table>
+
+  </body>
+  </html>

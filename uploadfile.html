@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://kit.fontawesome.com/fe3d68d4dc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="upload.css">
+  <style media="screen">
+    body{
+      background-image:url('back1.jpg');
+    }
+    nav a{
+       text-decoration: none;
+       outline: none;
+   color: white;
+   display: inline-block;
+   margin:5px 20px;
+   padding: 0px;
+   text-align: center;
+
+   }
+   nav{
+       padding: 0px;
+       text-align: center;
+       background-color: black;
+       box-shadow: 3px 2px 2px white;
+
+   }
+
+   nav a:hover{
+       background: linear-gradient(rgba(255, 255, 255, 0.171),rgba(172, 166, 166, 0.123));
+
+       border-radius: 10px;
+       border-bottom: 2px solid rgba(255, 255, 255, 0.555);
+
+       box-shadow: 1px 1px 3px white;
+       margin: 0px 5px;
+   }
+   nav a.active{
+       background-color: rgba(128, 128, 128, 0.185);
+       border-bottom:  1px solid white;
+   border-radius: 1px ;
+   }
+   .clearfix{
+     clear:both;
+   }
+
+   .dropdown{
+       display: inline-block;
+
+   }
+   .dropdown_list{
+       position:absolute;
+       padding: 20px;
+       width: 150px;
+       margin-top: 0px 0px;
+       display: none;
+       z-index:999;
+
+
+   }
+   .dropdown_list a{
+       text-align: center;
+       width: 130px;
+       display: block;
+       padding: 10px;
+       margin: 0px 0px;
+       color: white;
+       background-color:black;
+
+   }
+
+   .dropdown:hover .dropdown_list{
+       display: block;
+       background-color:black;
+
+   }
+
+
+  </style>
+  </head>
+  <body>
+    <nav>
+        <a target="_blank" href="onlinep.html" class="active"> Home</a>
+        <a href="#recommend" class="active">  About Us</a>
+
+
+              <!-- dropdown genre  -->
+              <div class="dropdown">
+                <a href="#Features" class="active">Features</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-handshake"></i>Online meeting and webinars</a>
+                <a href="#"><i class="fas fa-tablet-alt"></i> Screen sharing</a>
+                <a href="#"><i class="fas fa-file-pdf"></i> File sharing</a>
+                <a href="#"><i class="fas fa-globe"></i> Assistance from coursera,udemy</a>
+                <a href="#"><i class="fas fa-play-circle"></i>Access of recordings</a>
+                <a href="#"><i class="fas fa-database"></i> Managing student database</a>
+                <a href="#"><i class="far fa-comments"></i> Messaging</a>
+                </div>
+
+              </div>
+              <div class="dropdown">
+                <a href="#Resources" class="active">Resources</a>
+
+                <div class="dropdown_list">
+
+                <a href="#"><i class="fas fa-book"></i> Quick Start Guide</a>
+                <a href="#"><i class="fas fa-file-video"></i> Training Videos</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+
+                </div>
+
+              </div>
+
+
+        <a target="_blank" href="form3.html" class="active">Login</a>
+        <a target="_blank" href="forex2.html" class="active">Signup</a>
+
+
+        <input type="text" name="" id="" placeholder="search here">
+        <input type="button" name="" id="" value="search">
+    </nav>
+    <form action method="post">
+
+  <h1><strong>Please upload documents only in 'pdf','docx','rtf','jpg','png',& 'text'format</strong> </h1>
+
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title" class="form-controll"/>
+  </div>
+  <div class="form-group">
+    <label for="caption">Description</label>
+    <input type="text" name="caption" id="caption" class="form-controll"/>
+  </div>
+
+  <div class="form-group file-area">
+    <label for="images"><span>Your images should be at least 400x300 wide and file size should be less than 40mb</span></label>
+    <input  type="file" name="images" id="images" required="required" multiple="multiple"/>
+    <div class="file-dummy">
+      <div class="success">Great, your files are selected. Keep on.</div>
+
+
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button style="box-shadow: 1px 1px 3px white;
+    border-bottom: 4px solid darkgray;
+    border-radius: 8px;
+    font-weight:bold;" type="submit">Upload images</button>
+  </div>
+
+</form>
+
+
+
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+
+<a href="http://scribblerockerz.com/drag-n-drop-file-input-without-javascript/" class="back-to-article" target="_blank">back to Article</a>
+  </body>
+</html>
